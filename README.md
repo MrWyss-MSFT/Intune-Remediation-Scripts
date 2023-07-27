@@ -9,21 +9,20 @@ A collection of hopefully useful Intune remediation scripts
   - [Registry/remediate.ps1](Registry/remediate.ps1): sets registry values (Path, Name, Type, Value)
   - [Registry/README.md](Registry/README.md): instructions
 
+- **Devices**
+  - [Devices/detect.ps1](Devices/detect.ps1): checks devices, if they are working as expected, if not it will return the devices and exit non-zero.
+  - [Devices/remediate_remove_redetect.ps1](Devices/remediate_remove_redetect.ps1): will remove the devices and trigger a re-detect.
+  - [Devices/README.md](Devices/README.md): instructions (filtering, etc.)
+
 ## Changelog
 
-## [initial] - 2023-07-26
+### [0.0.1] - 2021-07-27
 
-### Added
+- added [Devices/](Devices/)
 
-- **Registry**
+### [initial] - 2023-07-26
 
-### Changed
-
-- README.md
-
-### Removed
-
-- N/A
+- added [Registry/](Registry/)
 
 ## Contributions
 
