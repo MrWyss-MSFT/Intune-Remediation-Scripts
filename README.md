@@ -16,6 +16,11 @@ A collection of hopefully useful Intune remediation scripts
 
 ## Changelog
 
+### [0.0.2] - 2021-08-07
+
+- added PNPDeviceID include and exclude filter in [Devices/detect.ps1](Devices/detect.ps1) and [Devices/remediate_remove_redetect.ps1](Devices/remediate_remove_redetect.ps1) and updated [Registry/README.md](Registry/README.md)
+- fixed empty string for DeviceClass and DeviceName in [Devices/detect.ps1](Devices/detect.ps1) and [Devices/remediate_remove_redetect.ps1](Devices/remediate_remove_redetect.ps1)
+
 ### [0.0.1] - 2021-07-27
 
 - added [Devices/](Devices/)
