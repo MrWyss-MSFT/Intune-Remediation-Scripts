@@ -16,7 +16,7 @@ A collection of hopefully useful Intune remediation scripts
 
 ## Changelog
 
-### [0.0.3] - 2021-08-07
+### [0.0.3] - 2021-08-08
 
 - fixed Powershell 5 issue, as there is no conditional ternary operator in Powershell 5
 
