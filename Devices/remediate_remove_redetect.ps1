@@ -14,8 +14,8 @@ $DeviceIDFilterInclude = "*"
 $Output = ""
 if ($DevicesWithIssue.count -gt 0) {
     Foreach ($Device in $DevicesWithIssue) {
-        $FriendlyName = [string]::IsNullOrWhiteSpace($Device.FriendlyName) ? "N/A" : $Device.FriendlyName
-        $PNPClass = [string]::IsNullOrWhiteSpace($Device.PNPClass) ? "N/A" : $Device.PNPClass
+        $FriendlyName = if ([string]::IsNullOrWhiteSpace($Device.FriendlyName)) {"N/A"} else {$Device.FriendlyName}
+        $PNPClass = if ([string]::IsNullOrWhiteSpace($Device.PNPClass)) {"N/A"} else {$Device.PNPClass}
 
         Write-Verbose "Removing PNPDeviceID: $($Device.PNPDeviceID) Device: $FriendlyName Class: $PNPClass"
         $PnpUtilOut += (pnputil.exe /remove-device "$($Device.PNPDeviceID)") | Out-String

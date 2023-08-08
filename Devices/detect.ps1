@@ -15,8 +15,8 @@ $DeviceIDFilterInclude = "*"
 $Output = ""
 if ($DevicesWithIssue.count -gt 0) {
     Foreach ($Device in $DevicesWithIssue) {
-        $FriendlyName = [string]::IsNullOrWhiteSpace($Device.FriendlyName) ? "N/A" : $Device.FriendlyName
-        $PNPClass = [string]::IsNullOrWhiteSpace($Device.PNPClass) ? "N/A" : $Device.PNPClass
+        $FriendlyName = if ([string]::IsNullOrWhiteSpace($Device.FriendlyName)) {"N/A"} else {$Device.FriendlyName}
+        $PNPClass = if ([string]::IsNullOrWhiteSpace($Device.PNPClass)) {"N/A"} else {$Device.PNPClass}
         
         Write-Verbose "Device: $FriendlyName Class: $PNPClass PNPDeviceID: $($Device.PNPDeviceID) ConfigManagerErrorCode: $($Device.ConfigManagerErrorCode)"
         $Output += " | Device: $FriendlyName Class: $PNPClass PNPDeviceID: $($Device.PNPDeviceID) Err: $($Device.ConfigManagerErrorCode)"
