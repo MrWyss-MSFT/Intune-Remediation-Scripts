@@ -18,6 +18,7 @@ Error states: (exit 1)
 - `LogonCredsAvailable Value is not there`
 - `Unknown Biometric configured`
 - `Something went wrong`
+- `Uncaught error`
 
 ## Usage/Examples
 
