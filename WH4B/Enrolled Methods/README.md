@@ -28,3 +28,7 @@ In **detect.ps1** change the ```$LogDirSubFolderName = "YOURFOLDERNAME"```. Impo
 - Run script in 64-bit PowerShell = Yes
 
 Schedule it to run repeatedly, e.g. daily.
+
+## Troubleshooting/Logs
+
+The log file is created in the users temp folder, e.g. `C:\Users\username\AppData\Local\Temp\YOURFOLDERNAME\_WHfB_lastused_method.log`
