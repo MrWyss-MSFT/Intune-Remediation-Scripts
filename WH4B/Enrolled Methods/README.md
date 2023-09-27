@@ -31,4 +31,4 @@ Schedule it to run repeatedly, e.g. daily.
 
 ## Troubleshooting/Logs
 
-The log file is created in the users temp folder, e.g. `C:\Users\username\AppData\Local\Temp\YOURFOLDERNAME\_WHfB_lastused_method.log`
+The log file is created in the users temp folder, e.g. `C:\Users\username\AppData\Local\Temp\YOURFOLDERNAME\_WHfB_enrolled_method.log`
